@@ -7,7 +7,7 @@
 /* HEADER */
 header{
     background-color: white;
-    height: 70px;
+    height: 50px;
 }
 
 .search-bar{
@@ -42,8 +42,7 @@ input{
 /* MAIN */
 main{
     width: 100%;
-    margin-top: 70px;
-    background-color: brown;
+    margin-top: 60px;
     display: flex;
 }
 
@@ -79,16 +78,60 @@ ul{
 /* END SIDEBAR */
 .content{
     width: calc(100% - 100px);
-    height: calc(100vh - 50px);
-    background-color: blue;
     overflow-y: auto;
 }
 
 
 .top-content{
     width: 100%;
-    height: 150px;
-    background-color: red;
+    background-color: #1b72e8;
+}
+
+.color{
+    color: white;
+}
+
+.col-6 div{
+    color: white;
+    font-size: 18px;
+}
+
+.col-8 i{
+    color: white;
+    font-size: 11px;
+}
+
+h6, #margin{
+    font-size: 12px;
+}
+
+#margin{
+    margin-bottom: 1.8rem;
+    vertical-align: middle;
+}
+
+#margin .fa-square-plus{
+    font-size: 25px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+h6 div{
+    font-size: 18px;
+}
+
+.background{
+    background-color: rgba(37, 37, 37, 0.233);
+    border-radius: 20px;
+    font-size: 8px;
+    color: white;
+    padding: 2px 5px;
+}
+
+.bottom-content{
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 /* END MAIN */
 
