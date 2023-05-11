@@ -15,11 +15,32 @@
     <header class="fixed-top">      
         <div class="content-navbar">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
+                <div class="row align-items-center my-2">
+                    <div class="col-auto">
+                        <img class="logo d-none d-md-block img-fluid" src="./img/logo.svg" alt="Logo">
+                        <img class="mobile d-md-none" src="./img/mobile-logo.png" alt="Mobile Logo">
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col">
+                        <div class="search-bar d-flex align-items-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" class="place" placeholder="Prova a cercare: Lezioni di Laravel">
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <i class="fa-solid fa-list-ul mx-1"></i>
+                        <i class="fa-solid fa-circle-question mx-1"></i>
+                        <i class="fa-solid fa-ellipsis-vertical mx-1"></i>
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
