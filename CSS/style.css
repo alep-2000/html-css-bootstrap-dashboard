@@ -6,18 +6,46 @@
 
 
 
-.content-navbar{
-    background-color: grey;
+header{
+    background-color: gray;
     height: 50px;
+}
+
+
+main{
+    width: 100%;
+    margin-top: 50px;
+    background-color: brown;
+    display: flex;
 }
 
 .sidebar{
     width: 150px;
+    height: calc(100vh - 50px);
     background-color: yellow;
-    position: absolute;
 }
 
-.top-sidebar{
+.content{
+    width: calc(100% - 150px);
+    height: calc(100vh - 50px);
+    background-color: blue;
+    overflow-y: auto;
+}
+
+.top-sidebar, .bottom-sidebar{
+    width: 150px;
+    height: 100px;
+    background-color: green;
+}
+
+.top-content{
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
+
+/* .top-sidebar{
    height: 60px;
    background-color: pink;
 }
@@ -26,39 +54,7 @@
     height: 50px;
     background-color: greenyellow;
     margin-top: 595px;
-}
+} */
 
-.main{
-    width: calc(100% - 150px);
-    background-color: brown;
-    margin-left: 150px;
-}
 
-.top-main{
-    background-color: green;
-    height: 100px;
-}
 
-.content{
-    height: calc(300px - 20px);
-    background-color: black;
-    margin: 20px 0 20px 10px;
-}
-
-.content2{
-    height: calc(180px - 20px);
-    background-color: green;
-    margin: 20px 10px 20px 0;
-}
-
-.content3{
-    height: calc(200px - 20px);
-    background-color: black;
-    margin: 20px 0 20px 10px;
-}
-
-.content4{
-    height: calc(405px - 20px);
-    background-color: blue;
-    margin: 20px 10px 20px 0;
-}
