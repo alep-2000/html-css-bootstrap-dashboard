@@ -133,6 +133,45 @@ h6 div{
     height: 100%;
     background-color: white;
 }
+
+.size{
+    font-size: 11px;
+}
+
+.fa-code{
+    background-color: #f26551;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* .space{
+    width: 500px;
+} */
+
+.green, .yellow, .red{
+    background-color: green;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.yellow{
+    background-color: #ffc107;
+    width: 45px;
+}
+
+.red{
+    background-color: #dc3545;
+}
+
+.col-8 .fa-pencil, .col-8 .fa-trash{
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 3px;
+    padding: 5px;
+    color: black;
+}
 /* END MAIN */
 
 
