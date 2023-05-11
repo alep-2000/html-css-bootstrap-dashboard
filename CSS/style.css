@@ -4,14 +4,11 @@
     box-sizing: border-box;
 }
 
-
-
+/* HEADER */
 header{
     background-color: white;
+    height: 70px;
 }
-
-
-
 
 .search-bar{
     width: 100%;
@@ -41,49 +38,58 @@ input{
     color: orange;
 }
 
+/* END HEADER */
+/* MAIN */
 main{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: brown;
     display: flex;
 }
 
+/* SIDEBAR */
 .sidebar{
-    width: 150px;
+    width: 100px;
     height: calc(100vh - 50px);
-    background-color: yellow;
+    background-color: #12283e;
 }
 
+.top-sidebar{
+    width: 100%;
+    height: 100px;
+}
+
+.bottom-sidebar{
+    height: 60px;
+}
+
+
+.top-sidebar, .bottom-sidebar{
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.fa-house, .fa-chart-simple, .fa-signal{
+    font-size: 14px;
+}
+/* END SIDEBAR */
 .content{
-    width: calc(100% - 150px);
+    width: calc(100% - 100px);
     height: calc(100vh - 50px);
     background-color: blue;
     overflow-y: auto;
 }
 
-.top-sidebar, .bottom-sidebar{
-    width: 150px;
-    height: 100px;
-    background-color: green;
-}
 
 .top-content{
     width: 100%;
     height: 150px;
     background-color: red;
 }
-
-
-/* .top-sidebar{
-   height: 60px;
-   background-color: pink;
-}
-
-.bottom-sidebar{
-    height: 50px;
-    background-color: greenyellow;
-    margin-top: 595px;
-} */
-
+/* END MAIN */
 
 
