@@ -13,11 +13,11 @@ header{
 .search-bar{
     width: 100%;
     background-color:  #e5e5e5;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .mobile{
-    height: 50px;
+    height: 40px;
 }
 
 input{
@@ -25,13 +25,20 @@ input{
     border: none;
 }
 
+input::placeholder{
+    font-size: 10px;
+    vertical-align: middle;
+}
+
 .place{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .fa-magnifying-glass{
     margin: 0 5px;
+    vertical-align: middle;
 }
 
 .fa-bell{
@@ -51,17 +58,23 @@ main{
     width: 100px;
     height: calc(100vh - 50px);
     background-color: #12283e;
+    position: fixed;
+    z-index: 1;
 }
 
 .top-sidebar{
     width: 100%;
-    height: 100px;
+    height: 80px;
+}
+
+.top-sidebar li:hover{
+    background-color: rgba(252, 247, 247, 0.575);
 }
 
 .bottom-sidebar{
+    width: 100%;
     height: 60px;
 }
-
 
 .top-sidebar, .bottom-sidebar{
     color: white;
@@ -72,13 +85,14 @@ ul{
     padding-left: 5px;
 }
 
-.fa-house, .fa-chart-simple, .fa-signal{
+.fa-house, .fa-chart-simple, .fa-signal, .fa-gear{
     font-size: 14px;
+    padding-right: 5px;
 }
 /* END SIDEBAR */
 .content{
     width: calc(100% - 100px);
-    overflow-y: auto;
+    margin-left: 100px;
 }
 
 
@@ -128,10 +142,18 @@ h6 div{
     padding: 2px 5px;
 }
 
+.fa-angles-right{
+    font-size: 10px;
+}
+
 .bottom-content{
     width: 100%;
     height: 100%;
     background-color: white;
+}
+
+tbody tr:hover{
+    background-color: rgba(252, 247, 247, 0.575);
 }
 
 .size{
@@ -143,6 +165,18 @@ h6 div{
     color: white;
     border-radius: 50%;
     padding: 5px;
+}
+
+.top-content #margin{
+    order: 3;
+}
+
+.top-content #one{
+    order: 1;
+}
+
+.top-content #two{
+    order: 2;
 }
 
 /* .space{
@@ -166,12 +200,79 @@ h6 div{
     background-color: #dc3545;
 }
 
-.col-8 .fa-pencil, .col-8 .fa-trash{
+
+.bottom-content .fa-pencil, .bottom-content .fa-trash{
     border: 1px solid rgb(128, 127, 127);
     border-radius: 3px;
     padding: 5px;
     color: black;
 }
 /* END MAIN */
+/* MEDIA QUERY */
+@media screen and (max-width:368px){
 
+    .fa-bell{
+        font-size: 13px;
+    }
+
+    .fa-magnifying-glass{
+        font-size: 13px;
+    }
+
+    .sidebar{
+        width: 40px;
+        height: calc(100vh - 50px);
+        background-color: #12283e;
+    }
+
+    .fa-house, .fa-chart-simple, .fa-signal, .fa-gear{
+        font-size: 14px;
+        padding-right: 5px;
+        margin-top: 10px;
+    }
+
+    .content{
+        width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+    .delete{
+        display: none;
+    }
+
+    .top-content #margin{
+        order: 1;
+    }
+
+    .top-content #one{
+        order: 2;
+    }
+
+    .top-content #two{
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sidebar{
+        width: 40px;
+        height: calc(100vh - 50px);
+        background-color: #12283e;
+    }
+
+    .content{
+        width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+    .fa-house, .fa-chart-simple, .fa-signal, .fa-gear{
+        font-size: 14px;
+        padding-right: 5px;
+        margin-top: 10px;
+    }
+
+    .plus{
+        display: none;
+    }
+}
 

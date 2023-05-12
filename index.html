@@ -17,8 +17,8 @@
             <div class="container-fluid">
                 <div class="row align-items-center my-2">
                     <div class="col-auto">
-                        <img class="logo d-none d-md-block img-fluid" src="./img/logo.svg" alt="Logo">
-                        <img class="mobile d-md-none" src="./img/mobile-logo.png" alt="Mobile Logo">
+                        <img class="logo d-none d-lg-block img-fluid" src="./img/logo.svg" alt="Logo">
+                        <img class="mobile d-lg-none" src="./img/mobile-logo.png" alt="Mobile Logo">
                     </div>
                     <div class="col">
                         <div class="search-bar d-flex align-items-center">
@@ -27,17 +27,17 @@
                         </div>
                     </div>
                     <div class="col-auto d-flex align-items-center">
-                        <i class="fa-solid fa-list-ul mx-1"></i>
-                        <i class="fa-solid fa-circle-question mx-1"></i>
-                        <i class="fa-solid fa-ellipsis-vertical mx-1"></i>
+                        <i class="fa-solid fa-list-ul mx-1 d-none d-lg-block"></i>
+                        <i class="fa-solid fa-circle-question mx-1 d-none d-lg-block"></i>
+                        <i class="fa-solid fa-ellipsis-vertical mx-1 d-none d-lg-block"></i>
                         <div class="dropdown">
                             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell"></i>
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                           </div>
                     </div>
@@ -51,24 +51,24 @@
         <div class="sidebar d-flex justify-content-between flex-column">
             <div class="top-sidebar">
                 <ul class="m-2">
-                    <li>
+                    <li class="d-flex align-items-center">
                         <i class="fa-solid fa-house"></i>
-                        <span>Home</span>
+                        <span class="d-none d-lg-block">Home</span>
                     </li>
-                    <li>
+                    <li class="d-flex align-items-center">
                         <i class="fa-solid fa-chart-simple"></i>
-                        <span>Stats</span>
+                        <span class="d-none d-lg-block">Stats</span>
                     </li>
-                    <li>
+                    <li class="d-flex align-items-center">
                         <i class="fa-solid fa-signal"></i>
-                        <span>Signals</span>
+                        <span class="d-none d-lg-block">Signals</span>
                     </li>
                 </ul>
             </div>
             <div class="bottom-sidebar">
-                <div class="m-2">
+                <div class="m-2 d-flex align-items-center">
                     <i class="fa-solid fa-gear"></i>
-                    <span>Admin</span>
+                    <span class="d-none d-lg-block">Admin</span>
                 </div>
             </div>
         </div>
@@ -76,8 +76,8 @@
             <div class="top-content">
                 <div class="container-fluid">
                     <div class="row color">
-                        <div class="col-6 align-items-center my-3">
-                            <div>
+                        <div class="col-12 col-md-4 col-lg-6 align-items-center my-3">
+                            <div id="one">
                                 Boolean
                                 <span class="background">
                                     Piano blaze
@@ -86,20 +86,21 @@
                             <div>
                                 <span class="background">3 app</span>
                                 <span><i class="fa-solid fa-angles-right"></i></span>
-                                <span class="background">Boolean mobile app</span>
-                                <span class="background">Boolean web app</span>
-                                <span class="background">Boolean blog app</span>
+                                <span><i class="fa-thin fa-plus background d-md-none"></i></span>
+                                <span class="background delete plus">Boolean mobile app</span>
+                                <span class="background delete plus">Boolean web app</span>
+                                <span class="background delete plus">Boolean blog app</span>
                             </div>
                         </div>
-                        <div class="col-4 d-flex align-items-center">
-                            <div>
+                        <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center">
+                            <div id="two">
                                 <h6>
                                     Studenti online negli ultimi 30 minuti
                                 </h6> 
                                 <div>125</div>
                             </div>
                         </div>
-                        <div class="col d-flex align-items-center">
+                        <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center">
                             <div id="margin">
                                 Nuovo studente
                                 <span><i class="fa-regular fa-square-plus"></i></span>
@@ -111,7 +112,7 @@
             <div class="bottom-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-8 my-2">
+                        <div class="col-12 col-lg-8 my-2">
                             <div class="card">
                                 <div class="card-header">
                                   Prossime classi
@@ -120,8 +121,7 @@
                                     <thead class="size">
                                       <tr>
                                         <th scope="col">Nome</th>
-                                        <th scope="col">Data Inizio</th>
-                                        <th scope="col">ROI</th>
+                                        <th class="delete" scope="col">ROI</th>
                                         <th scope="col">Stato</th>
                                         <th scope="col">Azioni</th>
                                       </tr>
@@ -129,8 +129,8 @@
                                     <tbody class="size">
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 75</th>
-                                        <td>15 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">15 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="green">
                                                 Done
@@ -143,8 +143,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 76</th>
-                                        <td>16 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">16 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="green">
                                                 Done
@@ -157,8 +157,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i>Classe 77</th>
-                                        <td>17 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">17 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td> 
                                             <div class="yellow">
                                                 Process
@@ -171,8 +171,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 78</th>
-                                        <td>18 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">18 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="green">
                                                 Done
@@ -185,8 +185,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 79</th>
-                                        <td>19 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">19 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="red">
                                                 failed
@@ -199,8 +199,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 80</th>
-                                        <td>20 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">20 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="green">
                                                 Done
@@ -213,8 +213,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 81</th>
-                                        <td>21 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">21 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="red">
                                                 failed
@@ -227,8 +227,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"><i class="fa-solid fa-code"></i> Classe 82</th>
-                                        <td>22 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="delete">22 Feb 2021</td>
+                                        <td class="delete">20%</td>
                                         <td>
                                             <div class="green">
                                                 Done
@@ -243,7 +243,7 @@
                                   </table>
                               </div>
                         </div>
-                        <div class="col-4 my-2">
+                        <div class="col-12 col-lg-4 my-2">
                             <div class="card">
                                 <div class="card-header">
                                   Todo
@@ -266,7 +266,7 @@
                                   </div>
                               </div>
                         </div>
-                        <div class="col-8 mt-2">
+                        <div class="col-12 col-lg-8 mt-2">
                             <div class="card">
                                 <div class="card-header">
                                   F.A.Q.
@@ -305,7 +305,7 @@
                                   </div>
                               </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 mt-3">
                             <div class="card">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
